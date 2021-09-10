@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" href="C:\FirstProject\stylesheet.css">
+<link rel="stylesheet" href="style2.css">
+<script src="style3.js"></script>
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Herbs, Spices, Recipes</title>
+    <link rel="stylesheet" href=" https://www.w3schools.com/w3css/4/w3.css">
+</head>
+<div class="img">
+    <style>
+        body {
+            background-image: url('https://thumbs.dreamstime.com/b/set-spices-herbs-white-wooden-table-basil-pepper-saffron-indian-traditional-cuisine-top-view-free-copy-space-151184942.jpg');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: 100% 100%;
+
+        }
+    </style>
+</div>
+<!-- comment: ctrl + /-->
+
+<body>
+    <br>
+    <div class="about" ; style="text-align: center;">
+        <a href="About.html" style="font-size: 20px;"> About</a>
+    </div>
+
+    <h1 style="text-align:center; font-size: 60px;"> Spaghetti Aglio e Olio</h1>
+
+    <div class="introduction" style="text-align: left;">
+
+        <p style="font-size: 120%;"> No two spaghetti aglio e olio recipes are alike, but this one is pretty true to the
+            classic method. The key
+            is slowly toasting the garlic slices to a perfect golden-brown in the olive oil. If it's too light, you
+            don't get the full flavor and if it's too dark it gets bitter.My advice? Do it perfectly.
+            <br>
+            <br>
+        </p>
+    </div>
+    <main>
+        <div class="fave">
+            <ul>
+                <h2>Favorite Movies/Tv Shows</h2>
+                <li> <a href="https://en.wikipedia.org/wiki/Street_Food_(TV_series)" target="blank"> Street Food </a>
+                </li>
+                <li> <a href="https://en.wikipedia.org/wiki/Chef%27s_Table" target="blank"> Chef’s Table </a></li>
+                <li> <a href="https://en.wikipedia.org/wiki/Ugly_Delicious" target="blank">Ugly Delicious </a></li>
+                <li> <a href="https://www.imdb.com/title/tt0116426/" target="blank"> The God Of Cookery</a> </li>
+
+            </ul>
+        </div>
+        <br>
+        <br>
+        <div class="textDecor">
+            <ul>
+                <h2>Favorite Foods</h2>
+
+                <li>Rigatoni Ala Vodka</li>
+                <li>Fetuccini Alfredo</li>
+                <li>Aglio e Olio</li>
+            </ul>
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+
+
+        <!-- Slideshow container -->
+        <div class="slideshow-container">
+            <!-- Full-width images with number and caption text -->
+            <div class="mySlides fade">
+                <div class="numbertext">1 / 4</div>
+                <img src="images/pic2.jpg" style="width:100%" height="450">
+                <div class="text">Delicious Food</div>
+            </div>
+            <div class="mySlides fade">
+                <div class="numbertext">2 / 4</div>
+                <img src="images/pic3.jfif" style="width:100%" height="450">
+                <div class="text">Delicious Food</div>
+            </div>
+            <div class="mySlides fade">
+                <div class="numbertext">3 / 4</div>
+                <img src="images/pic1.jfif" style="width:100%" height="450">
+                <div class="text">Delicious Food</div>
+            </div>
+            <div class="mySlides fade">
+                <div class="numbertext">4 / 4</div>
+                <img src="images/pic4.jfif" style="width:100%" height="450">
+                <div class="text">Delicious Food</div>
+            </div>
+            <!-- Next and previous buttons -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <br>
+        <!-- The dots/circles -->
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+    </main>
+<script>
+    var slideIndex = 1;
+showSlides(slideIndex);
+// Next/previous controls
+function plusSlides(n) {
+ showSlides(slideIndex += n);
+}
+// Thumbnail image controls
+function currentSlide(n) {
+ showSlides(slideIndex = n);
+}
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = " none";
+ }
+  for (i = 0; i < dots.length; i++) {
+     dots[i].className = dots[i].className.replace(" active", "");
+  }
+ slides[slideIndex-1].style.display = "block";
+ dots[slideIndex-1].className += " active";
+}
+</script>
+</body>
+
+</html>
