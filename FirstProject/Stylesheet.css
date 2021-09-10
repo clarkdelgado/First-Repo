@@ -1,0 +1,45 @@
+index.css .img {
+    opacity: 0.5;
+}
+
+.textDecor ul li {
+    list-style-type: none;
+    color: rgb(0, 0, 0);
+    margin-left: 2.5em;
+    font-weight: inherit;
+}
+
+.textDecor h2 {
+    margin-left: 1.5em;
+}
+
+.about a,
+.linkback h1 {
+    color: black;
+    list-style-type: none;
+    font-weight: inherit;
+}
+
+.fave ul {
+    list-style-type: none;
+
+}
+
+/*LAYOUT*/
+main {
+    column-count: 2;
+    column-width: 400px;
+    /*tells the browser how many pixels to show*/
+    margin-top: 10px;
+    margin-left: 100px;
+}
+
+.fave a {
+    color: black;
+    margin-left: 3em;
+    font-weight: inherit;
+}
+
+.fave h2 {
+    margin-left: 1.5em;
+}
